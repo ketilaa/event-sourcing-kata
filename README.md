@@ -26,16 +26,52 @@ You’ll implement a tiny, language-idiomatic framework around four concepts:
 
 ---
 
-## 🛠️ Setup
+## Java
+### Prerequisites
+- Java 21
+- Gradle
+
+### Build and run tests
+```shell
+cd java
+./gradlew test
+```
+## .Net
+### Prerequisites
+- .Net9+
+
+### Build and run tests
+```shell
+cd dotnet
+dotnet test
+```
+
+## C++
+
+### Prerequisites
+- cmake
+- C++ 20
+
+### Initialize, build and run tests
+```shell
+cd cpp
+mkdir build
+cd build
+cmake ..
+cmake --build .
+ctest --output-on-failure
+```
+
+## Node.js
 
 ### Prerequisites
 - Node.js ≥ 18
-- npm or yarn
+- npm
 - Basic knowledge of TypeScript
 
-### Install & initialize
-```bash
-git clone <this-repo-url>
-cd event-sourcing-kata
+### Initialize and build
+```shell
+cd node
 npm install
-
+npm test
+```
